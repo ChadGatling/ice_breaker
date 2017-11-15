@@ -1,5 +1,5 @@
 # ice_breaker
-Location based demand dating.
+Location based dating.
 
 1st commit:
 	Initial commit.
