@@ -11,3 +11,6 @@ Location based on demand dating.
 	Added basic script to some of the files (config, models). 
 		toDo: Need public files (html, css/bootstrap or other, front end js)
 			Need backend js (server, routes).
+
+4th:
+	Testing branch and checkout process.
