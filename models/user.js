@@ -5,10 +5,10 @@ module.exports = function(sequelize, DataTypes) {
     name: DataTypes.STRING,
     gender: DataTypes.STRING, //1-men, 2-women, 3-transman, 4-transwoman
     age: DataTypes.INTEGER,
-    age_range_high: DataTypes.INTEGER,
-    age_range_low: DataTypes.INTEGER,
-    phone_number: DataTypes.STRING,
-    sexual_pref: DataTypes.INTEGER, //1-men, 2-women, 3-transman, 4-transwoman
+    ageRangeHigh: DataTypes.INTEGER,
+    ageRangeLow: DataTypes.INTEGER,
+    phoneNumber: DataTypes.STRING,
+    sexualPref: DataTypes.INTEGER, //1-men, 2-women, 3-transman, 4-transwoman
     language: DataTypes.STRING, //Fluents only
     interests: DataTypes.TEXT
 

@@ -16,5 +16,11 @@
   "bugs": {
     "url": "https://github.com/ewendel88/ice_breaker/issues"
   },
-  "homepage": "https://github.com/ewendel88/ice_breaker#readme"
+  "homepage": "https://github.com/ewendel88/ice_breaker#readme",
+  "dependencies": {
+    "express": "^4.16.2",
+    "mysql2": "^1.5.0",
+    "path": "^0.12.7",
+    "sequelize": "^4.22.7"
+  }
 }

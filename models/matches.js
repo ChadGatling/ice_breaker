@@ -2,10 +2,7 @@
 module.exports = function(sequelize, DataTypes) {
   var Matches = sequelize.define("matches", {
     // Giving the Matches model a name of type STRING
-    user: DataTypes.STRING,
-    match_user: DataTypes.String,
     
-
     // Add more columns as needed
   });
 
@@ -17,5 +14,5 @@ module.exports = function(sequelize, DataTypes) {
   //   });
   // };
 
-  return User;
+  return Matches;
 };
