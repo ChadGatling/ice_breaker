@@ -6,12 +6,6 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 
-
-//Map Dependencies
-// ===============================================
-var LeafletFactory = require("leaflet");
-var components = require("server-components");
-
 // Express-App Setup 
 // =============================================================
 var app = express();
