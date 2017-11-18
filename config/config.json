@@ -1,7 +1,6 @@
 {
   "development": {
     "username": "root",
-    "password": "Batman123",
     "database": "ice_breaker",
     "host": "127.0.0.1",
     "dialect": "mysql"
@@ -14,10 +13,10 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root", //tHIS WILL be the JAWS.DB INFO
-    "password": null, //tHIS WILL be the JAWS.DB INFO
-    "database": "database_production",
-    "host": "127.0.0.1",
+    "username": "lc5hg6ok39c0v71b",
+    "password": "dsjr9jmqpdnbmdbd",
+    "database": "nkbsxgwte1dvgmti",
+    "host": "kavfu5f7pido12mr.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
     "dialect": "mysql"
   }
 }
