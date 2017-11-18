@@ -2,7 +2,7 @@
 <html lang="en-us">
 
 <head>
-    <title>Example Welcome Page: OAUTH</title>
+    <title>Example Meet Page</title>
     <meta charset="utf-8">
     <!-- <meta viewport.. > -->
     <!-- Bootstrap CSS -->
@@ -32,13 +32,13 @@
                 <nav class="nav justify-content-center">
                     <ul class="nav">
                         <li class="nav-item">
-                            <a class="nav-link active" href="./welcome.html">Home</a>
+                            <a class="nav-link active" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./sign-in.html">Sign In</a>
+                            <a class="nav-link active" href="/profile">Sign In</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./sign-up.html">Sign Up</a>
+                            <a class="nav-link" href="/meet">Sign Up</a>
                         </li>
                         <!-- TOOLTIP TEST -->
                         <li class="nav-item">
@@ -102,7 +102,7 @@
 	    var map;
 	    function initialize() {
 	        geocoder = new google.maps.Geocoder();
-	   		var latlng = new google.maps.LatLng(-25.363, 131.044);
+	   		var latlng = new google.maps.LatLng(30.2672, -97.7431);
 	        var mapOptions = {
 	        	zoom: 5,
 	        	center: latlng,
