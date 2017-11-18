@@ -14,8 +14,8 @@
     "dialect": "mysql"
   },
   "production": {
-    "username": "root",
-    "password": null,
+    "username": "root", //tHIS WILL be the JAWS.DB INFO
+    "password": null, //tHIS WILL be the JAWS.DB INFO
     "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "mysql"
