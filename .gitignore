@@ -1,3 +1,11 @@
+.DS_Store
+
+# passwords
+public/keys.js
+
+# express config file
+config/config.json
+
 # Logs
 logs
 *.log
