@@ -1,0 +1,30 @@
+#container {
+   min-height:100%;
+   position:relative;
+}
+
+.header {
+	background-color: #C2EEE6;
+	/*padding-bottom: 0px;*/
+
+}
+
+.logo {
+	
+}
+
+.mainBody {
+	background-color: #C2EEE6;
+	padding-bottom: 183px;
+	padding-top: 100px;
+
+	
+}
+
+footer {
+	padding-top: 0px;
+	background-color: #C2EEE6;
+	position:absolute;
+    bottom:0;
+    width: 100%;
+}
