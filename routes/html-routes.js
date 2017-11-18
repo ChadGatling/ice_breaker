@@ -1,23 +1,35 @@
+// *********************************************************************************
+// html-routes.js - this file offers a set of routes for sending users to the various html pages
+// *********************************************************************************
+
+// Dependencies
+// =============================================================
 var path = require("path");
 
+// Routes
+// =============================================================
 module.exports = function(app) {
-	app.get("/signup", function(req.res) {
-		res.sendFile(path.join(__dirname, "../public/html/sign-up.html"))
-	});
 
-	app.get("/profile", function(req.res) {
-		res.sendFile(path.join(__dirname, "../public/html/profile.html"))
-	});
+  // Each of the below routes just handles the HTML page that the user gets sent to.
 
-	app.get("/meet", function(req.res) {
-		res.sendFile(path.join(__dirname, "../public/html/meet.html"))
-	});
+  app.get("/", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/blog.html"));// change to correct name of file and path
+  });
 
-	app.get("/aboutus", function(req.res) {
-		res.sendFile(path.join(__dirname, "../public/html/about-us.html"))
-	});
+  // cms route loads cms.html
+  app.get("/tags", function(req, res) {
+    res.sendFile(path.join(__dirname, "./tags.html"));// samsies
+  });
 
-	app.use(function(req, res) {
-		res.sendFile(path.join(__dirname, "../public/html/welcome.html"))
-	});
+  // blog route loads blog.html
+  app.get("/blog", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/blog.html")); // samesies
+  });
+
+  // authors route loads author-manager.html
+  app.get("/authors", function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/author-manager.html")); // samesies
+  });
+
 };
+

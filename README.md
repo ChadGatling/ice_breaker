@@ -1,5 +1,36 @@
 # ice_breaker
-Location based dating.
+
+Location based on demand dating. changing this line to testg conflict resolutions
+
+Work ToDo: (these can be split up as needed)
+	Welcome/Login page................... (done)
+	Sign-up/ User info input page........ (Austin)
+		Tags/interests (Lorna)
+		gender
+		phone
+		age
+		age range
+		sexual pref
+		languge
+	Building Tables/models............... (Done, unless we need to add or change someting)
+	User's profile page/ edit info page..
+	Meet up page.........................
+	User input functionality frontend js. Amanda
+	Sign-in functionality...............
+	Meet up functionality...............
+	Sequelize routes.................... (Elliott)
+	manipulating models.................
+	Geoloation / Map API ............... Lisa
+	location based meetup............... 
+	User matching script(simple)........
+	Data handling (sequelize)...........
+	Authentication......................
+	Watson chatbot integration?.........
+	Prettyfication......................
+
+	Research: KnockOut.js ..............
+	
+>>>>>>> master
 
 1st commit:
 	Initial commit.
@@ -16,3 +47,7 @@ Location based dating.
 
 4th:
 	Testing branch and checkout process.
+
+5th:
+	forgot to add server file. Added it here.
+>>>>>>> master

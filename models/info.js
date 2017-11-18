@@ -15,15 +15,15 @@ module.exports = function(sequelize, DataTypes) {
     }
   });
 
-  Info.associate = function(models) {
-    // We're saying that a Info should belong to an Author
-    // A Info can't be created without an Author due to the foreign key constraint
-    Info.belongsTo(models.Author, {
-      foreignKey: {
-        allowNull: false
-      }
-    });
-  };
+  // Info.associate = function(models) {
+  //   // We're saying that a Info should belong to an Author
+  //   // A Info can't be created without an Author due to the foreign key constraint
+  //   Info.belongsTo(models.Author, {
+  //     foreignKey: {
+  //       allowNull: false
+  //     }
+  //   });
+  // };
 
   return Info;
 };
