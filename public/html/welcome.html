@@ -12,13 +12,27 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+<style type="text/css">
+	a{
+	color: white
+	}
+
+	h1,h2 {
+		color: #7275a5
+	}
+
+	.footer{
+	color: white
+	}
+</style>
+
 </head>
 
 <body>
-<script><!-- //THIS IS THE ASYNC Code Snippet for the FB code functionality. (It MUST be place immediately after the OPENING body tag, per the docs.) -->
-
+<!-- //THIS IS THE ASYNC Code Snippet for the FB code functionality. (It MUST be place immediately after the OPENING body tag, per the docs.) -->
 <script>
-var facebookKey = require("../keys.js");
+// var facebookKey = require("../keys.js");
 
 window.fbAsyncInit = function() {
     FB.init(facebookKey);
@@ -57,8 +71,8 @@ function checkLoginState() {
 
 <div class="container-fluid full text-center">
 	
-	<div class="container">
-		<div class="row" style="margin: 0 auto; padding-top:15px">
+	<div class="container text-center">
+		<div class="row" style="margin: 0 auto; padding-top:15px; background-color:#7275a5">
 			<div class="col-sm-12">
 				<nav class="nav justify-content-center">
 					<ul class="nav">
@@ -121,26 +135,26 @@ function checkLoginState() {
 			<div class="col-sm-4">
 				<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
 				<br/>
-				<h4 class="footer text-center">Match</h4>
+				<h4 class="text-center">Match</h4>
 				<p>Shaman migas poke kickstarter. Austin poke try-hard waistcoat wolf. Stumptown kickstarter iceland asymmetrical semiotics, chia typewriter +1 flexitarian. +1 deep v tilde flannel occupy. Organic VHS sustainable austin art party pickled.</p>
 			</div>
 			<div class="col-sm-4">
 				<br/>
 				<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
-				<h4 class="footer text-center">Meet</h4>
+				<h4 class="text-center">Meet</h4>
 				<p>Shaman migas poke kickstarter. Austin poke try-hard waistcoat wolf. Stumptown kickstarter iceland asymmetrical semiotics, chia typewriter +1 flexitarian. +1 deep v tilde flannel occupy. Organic VHS sustainable austin art party pickled.</p>
 			</div>
 			<div class="col-sm-4">
 				<br/>
 				<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
-				<h4 class="footer text-center">Connect</h4>
+				<h4 class="text-center">Connect</h4>
 				<p>Shaman migas poke kickstarter. Austin poke try-hard waistcoat wolf. Stumptown kickstarter iceland asymmetrical semiotics, chia typewriter +1 flexitarian. +1 deep v tilde flannel occupy. Organic VHS sustainable austin art party pickled.</p>
 			</div>
 		</div>
 	</div>
 
 	<div class="row" style="position: fixed; bottom:0px; width: 100%">
-		<div class="col-sm-12" style="background-color:#343cb4; padding: 15px">
+		<div class="col-sm-12" style="background-color:#7275a5; padding: 15px">
 			<h3 class="footer text-center">Footer</h3>
 		</div>
 	</div>
@@ -148,25 +162,29 @@ function checkLoginState() {
 
 <!--- Modal Code -->
 <div id="oAuthModal" class="modal fade" role="dialog">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-md">
         <!-- Begin Modal Content -->
         <div class="modal-content">
             <div class="modal-header">
-                <h2 class="modal-title text-center" style="margin: 0 auto"><strong>Let's Crack Some Ice!</strong></h2>
+                <h2 class="modal-title text-center" style="margin: 0 auto"><strong>...Let's Melt That Ice!</strong></h2>
                 <button type="button" class="close" data-dismiss="modal" style="text-align:right;">&times;</button>
                 <!-- //the UNICODE: "&times;"->>> is the code for the "x" sign. -->
             </div>
             <div class="modal-body text-center">
                 <h4 class="text-center">Sign in to get started.</h4>
+                
+                <!-- testing to see which works... -->
                 <div id="fb-root">
 	                <fb:login-button 
 					  scope="public_profile,email"
 					  onlogin="checkLoginState();">
 					</fb:login-button>
 				</div> 
-                <!-- <div id="spinner" style="background:#4267b2; border-radius: 5px; color: white; height: 40px; text-align: center; width: 250px;"> Loading
+				<!-- testing to see which works... -->
+                <div id="spinner" style="background:#7275a5; border-radius: 5px; color: white; height: 45px; text-align: center; width: 200px; margin: 0 auto"> Loading...
 						<div class="fb-login-button" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
-				</div>	 -->
+				</div>	
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default text-center" data-dismiss="modal">Let's Go!</button>
@@ -177,7 +195,7 @@ function checkLoginState() {
 </div>
 
 <script type="text/javascript">
-	//JS GOES HERE...
+	//CUSTOM JS SCRIPT GOES HERE...
 </script>
 
 </body>
