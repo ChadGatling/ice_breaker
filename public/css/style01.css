@@ -1,30 +1,61 @@
+html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 #container {
    min-height:100%;
    position:relative;
-}
-
-.header {
-	background-color: #C2EEE6;
-	/*padding-bottom: 0px;*/
-
-}
-
-.logo {
-	
+   background-color: #C2EEE6;
 }
 
 .mainBody {
-	background-color: #C2EEE6;
-	padding-bottom: 183px;
-	padding-top: 100px;
+	text-align: center;
+}
 
-	
+.form-horizontal {
+	margin-bottom: 100px;
+}
+
+.form-container {
+	/*margin-right: 100px;*/
+}
+
+.create-account {
+	margin-top: 100px;
+}
+
+.form-control {
+	margin: 10px 40px;
+}
+
+.tag-wrapper {
+	width: 1000px;
+}
+
+p {
+	font-size: xx-large;
+	 text-shadow: -1px 0 #089BA3, 0 1px #089BA3, 1px 0 #089BA3, 0 -1px #089BA3;
+	color: white;
+	font-family: 'Lobster', cursive;
 }
 
 footer {
-	padding-top: 0px;
-	background-color: #C2EEE6;
+		text-align: center;
+	padding: 0px;
+	margin-top: 40px;
+	margin-bottom: 0;
+/*	height: 40px;
+	width: 100%;
 	position:absolute;
-    bottom:0;
-    width: 100%;
+    bottom: 0px;
+    left: 0px;
+    margin-bottom: 24px;*/
 }
