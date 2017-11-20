@@ -1,114 +1,152 @@
-<!doctype html>
+<doctype html>
 <html lang="en">
 
 <head>
-    <title>iceBreakr</title>
+    <title>iB Create Account</title>
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style01.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 </head>
 
 <body>
-  <div id="container">
+    <div id="container">
         <div class="header container-fluid">
-        <div class="row justify-content-center">
-            <div class="logo">
-                <img src="./images/logo.png" alt="iceBreakrBear">
+            <div class="row justify-content-center">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="iceBreakrBear">
+                </div>
             </div>
         </div>
-    </div>
-    <div class="form-container">
-            <form>
-                <div class="form-group row">
-                    <label for="inputFirstName" class="col-2 col-form-label">First Name</label>
-                    <div class="col-10">
-                        <input class="form-control" type="text" value="" id="inputFirstName">
-                    </div>
+        <div class="mainBody container-fluid">
+            <div class="row justify-content-center">
+                <div class="form-container">
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputFirstName" class="col-2 col-form-label">First Name</label>
+                            <div class="col-10">
+                                <input class="form-control" type="text" value="" id="inputFirstName">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputLastName" class="col-2 col-form-label">Last Name</label>
+                            <div class="col-10">
+                                <input class="form-control" type="text" value="" id="inputLastName">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="lastName" class="col-2 col-form-label">Age</label>
+                            <div class="col-10">
+                                <input class="form-control" type="number" value="" id="inputAge">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+                            <div class="col-10">
+                                <input class="form-control" type="tel" placeholder="1-(555)-555-5555" id="example-tel-input">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="gender" class="col-2 col-form-label">Gender Preference</label>
+                            <div class="col-10">
+                                <select class="form-control mb-5 mr-sm-5 mb-sm-0" id="inlineFormCustomSelect">
+                                    <option selected>Choose...</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
                 </div>
-
-                <div class="form-group row">
-                    <label for="inputLastName" class="col-2 col-form-label">Last Name</label>
-                    <div class="col-10">
-                        <input class="form-control" type="text" value="" id="inputLastName">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="lastName" class="col-2 col-form-label">Age</label>
-                    <div class="col-10">
-                        <input class="form-control" type="number" value="" id="inputAge">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
-                    <div class="col-10">
-                        <input class="form-control" type="tel" value="1-(555)-555-5555" id="example-tel-input">
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <label for="gender" class="col-2 col-form-label">Gender Preference</label>
-                    <div class="col-10">
-                        <select class="form-control mb-5 mr-sm-5 mb-sm-0" id="inlineFormCustomSelect">
-                            <option selected>Choose...</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                        </select>
-                    </div>
-                </div>
-            </form>
-        </div>
-            <br>
-            <br>
-            <div class="tags">
-                <button type="button" class="btn btn-outline-secondary" id="tag">Hiking</button>
-                <button type="button" class="btn btn-outline-secondary" id="tag">Beer</button>
-                <button type="button" class="btn btn-outline-secondary" id="tag">Men</button>
-                <button type="button" class="btn btn-outline-secondary" id="tag">Women</button>
-                <button type="button" class="btn btn-outline-secondary" id="tag">Hiking</button>
-                <button type="button" class="btn btn-outline-secondary" id="tag">Beer</button>
-                <button type="button" class="btn btn-outline-secondary" id="tag">Men</button>
-                <button type="button" class="btn btn-outline-secondary" id="tag">Women</button>
-                <button type="button" class="btn btn-outline-secondary" id="tag">Hiking</button>
-                <button type="button" class="btn btn-outline-secondary" id="tag">Beer</button>
-                <button type="button" class="btn btn-outline-secondary" id="tag">Men</button>
-
             </div>
+            <br>
+            <br>
+            <div class="row justify-content-center">
+                <div class="tag-wrapper">
+                    <p>Choose all the ice breakers that interest you!</p>
+                    <div class="tags">
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Hiking
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Wine
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Yoga
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Running
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Running
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Running
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Running
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Running
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Running
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Running
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Running
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Running
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Running
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Running
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Running
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Running
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Running
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Running
+                        </button>
+                        <button type="button" class="btn btn-outline-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">Running
+                        </button>
+                    </div>   
+                </div>
+            </div>
+     
+  
+            <div class="row justify-content-center">
+                <div class="create-account">
+                    <button type="button" class="btn btn-primary">Create account!</button>
+                </div>
+            </div>
+        </div>
+
+        <!--             </div> -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+        <footer>
+            <div class="row justify-content-center">
+                <p>&copy; iceBreakr 2017</p>
+            </div>
+        </footer>
     </div>
-    
-    
-  </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
     <script type="text/javascript">
-        //dynamically create buttons from database. create button and post from the database
+    //dynamically create buttons from database. create button and post from the database
 
-        function displayTags() {
-            var tag = $(this).attr("tag-name");
+    function displayTags() {
+        var tag = $(this).attr("tag-name");
 
-            var queryURL = ""
+        var queryURL = ""
 
-            $.ajax({
-                url: queryURL,
-                method: "GET"
-            }).done(function(req, res) {
+        $.ajax({
+            url: queryURL,
+            method: "GET"
+        }).done(function(req, res) {
 
-            })
-        }
-        var createTag = $(".tags").prepend("<button>");
-        </script>
+        })
+    }
+    var createTag = $(".tags").prepend("<button>");
+    // var createClass = $(".tags").addClass("btn btn-outline-secondary"); //add this later when database is set up
+    </script>
 </body>
-<footer>
-  <div class="row justify-content-center">
-    <p>&copy; iceBreakr 2017</p>
-  </div>  
-</footer>
 
 </html>
-
