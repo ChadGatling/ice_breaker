@@ -1,4 +1,6 @@
 # ice_breaker
+<<<<<<< HEAD
+
 Location based on demand dating. changing this line to testg conflict resolutions
 
 Work ToDo: (these can be split up as needed)
@@ -29,6 +31,10 @@ Work ToDo: (these can be split up as needed)
 
 	Research: KnockOut.js ..............
 	
+>>>>>>> master
+=======
+Location based on demand dating.
+>>>>>>> 13dbd95a6bb6ef3dc8ddb4bd2da27bf1e6c8ae11
 
 1st commit:
 	Initial commit.
@@ -38,11 +44,14 @@ Work ToDo: (these can be split up as needed)
 
 3rd:
 	Added basic script to some of the files (config, models). 
-		toDo: Need public files (html, css/bootstrap or other, front end js)
-			Need backend js (server, routes).
+		toDo: 
+		1.) Need to take account of all technologies expected, and decide on Stack.
+		2.) Create public files (html, css/bootstrap or other, front end js/Handlebars?).
+		3.) Create backend js (server, routes).
 
 4th:
 	Testing branch and checkout process.
 
 5th:
 	forgot to add server file. Added it here.
+>>>>>>> master
