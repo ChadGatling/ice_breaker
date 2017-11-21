@@ -12,7 +12,7 @@ module.exports = function(app) {
   // Each of the below routes just handles the HTML page that the user gets sent to.
   
   //static assets folder 
-  app.use(express.static("public"));
+  // app.use(express.static("public"));
 
   // signup route loads signIn.html
   app.get("/signup", function(req, res) {
