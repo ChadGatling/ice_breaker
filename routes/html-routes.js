@@ -34,14 +34,14 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "./breakTheIce.html"));
   });
 
-  // meet route loads meet.html
+  // // meet route loads meet.html
   app.get("/meet", function(req, res) {
     res.sendFile(path.join(__dirname, "./meet.html"));
   });
 
   //default to main.html
-  app.get(function(req, res) {
-    res.sendFile(path.join(__dirname, "./main.html"));
+  app.use( function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/main.html"));
   });
 
 };

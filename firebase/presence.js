@@ -7,7 +7,7 @@ var password = $("#inputPassword3").val().trim();
 
 
 //Needs to go in head of html 
-//<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
 
 //Initialize Firebase >> hide this before the end in a PW file...
 var config = {
