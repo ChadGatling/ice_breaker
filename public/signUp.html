@@ -6,9 +6,10 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./css/style01.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/style01.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 </head>
 
@@ -137,7 +138,17 @@
             </footer>
         </div>
         <script type="text/javascript">
-        $('#myModal').modal(options);
+        // $('#myModal').modal(options);
+
+
+
+
+        //Click-Event for Sign-Up Button on HTML.
+$("#sign-up").on("click", function() {
+    createProfile();
+    sendEmailVerification();
+});
+
 
             </script>
             </body>
