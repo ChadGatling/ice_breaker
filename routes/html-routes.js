@@ -10,7 +10,13 @@ var path = require("path");
 // =============================================================
 module.exports = function(app) {
   // Each of the below routes just handles the HTML page that the user gets sent to.
+<<<<<<< HEAD
 
+=======
+  
+  //static assets folder 
+  // app.use(express.static("public"));
+>>>>>>> master
 
   // signup route loads signIn.html
   app.get("/signup", function(req, res) {
@@ -32,14 +38,14 @@ module.exports = function(app) {
     res.sendFile(path.join(__dirname, "./breakTheIce.html"));
   });
 
-  // meet route loads meet.html
+  // // meet route loads meet.html
   app.get("/meet", function(req, res) {
     res.sendFile(path.join(__dirname, "./meet.html"));
   });
 
   //default to main.html
-  app.get(function(req, res) {
-    res.sendFile(path.join(__dirname, "./main.html"));
+  app.use(function(req, res) {
+    res.sendFile(path.join(__dirname, "../public/main.html"));
   });
 
 };

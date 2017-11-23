@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+// meet-api-routes.js
+>>>>>>> master
 // Requiring our models
 var db = require("../models");
 
