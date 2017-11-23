@@ -57,7 +57,7 @@ module.exports = function(app) {
       ageRangeLow: 25,
       phoneNumber: "123-456-7890",
       sexualPref: "female",
-      language: "English", "French", "Spanish"
+      language: "English, French, Spanish",
       interests: "dance kayaks hiking scuba-diving hunting traveling literature foreign-languages safaris jeeps"
     }).then(function(results) {
       // `results` here would be the newly created user
