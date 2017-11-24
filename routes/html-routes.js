@@ -16,12 +16,13 @@ module.exports = function(app) {
 
   // signup route loads signIn.html
   app.get("/signup", function(req, res) {
-    res.sendFile(path.join(__dirname, "./signUp.html"));
+    console.log("connected");
+    res.sendFile(path.join(__dirname, "/../public/signUp.html"));
   });
 
   // signin route loads signIn.html
   app.get("/signin", function(req, res) {
-    res.sendFile(path.join(__dirname, "./signIn.html"));
+    res.sendFile(path.join(__dirname, "/../public/signIn.html"));
   });
 
   // profile route loads tags.html
