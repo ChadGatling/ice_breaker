@@ -11,11 +11,13 @@ body {
 }
 
 #container {
+
 min-height:100%;
 position:relative;
 /*background-color: #C2EEE6;*/
+background-color: #801EEF;
 /*background-color:  #05021c;*/
-background-color:  #04093b;
+/*background-color:  #04093b;*/
 background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
 }
 
@@ -74,21 +76,13 @@ i {
 p {
 	font-size: xx-large;
 	text-shadow: -1px 0 #089BA3, 0 1px #089BA3, 1px 0 #089BA3, 0 -1px #089BA3;
+
 	color: white;
 	font-family: 'Lobster', cursive;
 }
 
 footer {
-	text-align: center;
-	padding: 0px;
-	margin-top: 40px;
-	margin-bottom: 0;
 
-/*	height: 40px;
-	width: 100%;
-	position:absolute;
-    bottom: 0px;
-    left: 0px;
-    margin-bottom: 24px;*/
+    margin-bottom: 24px;
 }
 
