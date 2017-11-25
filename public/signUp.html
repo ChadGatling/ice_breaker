@@ -41,46 +41,49 @@
                 <div class="row justify-content-center">
                     <div class="signUp col-md-6 text-center">
                         <p>OR</p>
-                        <form>
+                        <form action="/api/new" method="POST">
+
                             <div class="form-group row">
                                 <label for="inputFirstName" class="inputLabel col-2 col-form-label">First Name</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="text" value="" id="inputFirstName" required>
+                                    <input class="form-control" type="text" name ="firstName" value="" id="inputFirstName" required>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputLastName" class="inputLabel col-2 col-form-label">Last Name</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="text" value="" id="inputLastName" required>
+                                    <input class="form-control" type="text" name ="lastName"value="" id="inputLastName" required>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="lastName" class="inputLabel col-2 col-form-label">Age</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="number" value="" id="inputAge" required>
+                                    <input class="form-control" type="number" name ="age" value="" id="inputAge" required>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="example-tel-input" class="inputLabel col-2 col-form-label">Telephone</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="tel" placeholder="1-(555)-555-5555" id="inputTel" required>
+                                    <input class="form-control" type="tel" 
+                                    name ="phoneNumber" placeholder="1-(555)-555-5555" id="inputTel" required>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputEmail" class="inputLabel col-2 col-form-label">Email</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="email" id="inputEmail" required>
+                                    <input class="form-control" type="email" name ="email" id="inputEmail" required>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <label for="inputPassword" class="inputLabel col-2 col-form-label">Password</label>
                                 <div class="col-sm-10">
-                                    <input class="form-control" type="password" id="inputPassword" required>
+                                    <input class="form-control" type="password"
+                                    name ="password" id="inputPassword" required>
                                 </div>
                             </div>
                             <div class="form-group row">
                                 <div class="col-10">
-                                    <a href="/profile"><button type="submit" class="btn btn-default" id="sign-up">Sign up</button></a>
+                                    <button type="submit" class="btn btn-default" id="sign-up">Sign up</button>
                                 </div>
                             </div>
                         </form>
@@ -117,10 +120,10 @@
             
         </div>
 
-        <script type="text/javascript">
+        <!-- <script type="text/javascript">
         $('#myModal').modal(options);
 
-            </script>
+            </script> -->
             
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

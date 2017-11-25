@@ -1,4 +1,5 @@
 // Dependencies
+console.log("connected");
 // =============================================================
 var db = require("../models");
 
@@ -26,45 +27,23 @@ module.exports = function(app) {
     console.log("User Data:");
     console.log(req.body);
 
-    db.user.create({
-      name: "Elliott",
-      gender: "male",
-      age: 29,
-      ageRangeHigh: 35,
-      ageRangeLow: 21,
-      phoneNumber: "555-555-5555",
-      sexualPref: "female",
-      language: "English",
-      interests: "cars boats planes submarines guns freedom beef fire jeeps monkeys"
-    }).then(function(results) {
+    // db.user.create({
+    //   firstName: req.body.firstName,
+    //   lastName: req.body.lastName,
+    //   age: req.body.age,
+    //   phoneNumber: req.body.phoneNumber,
+    //   email: req.body.email,
+    //   password: req.body.password
+      
+    // }).then(function(results) {
       // `results` here would be the newly created user
-      res.send(results);
-    });
-
+      res.redirect("/profile");
+    // });
+    
   });
 
     // Add a user2
-  app.post("/api/new", function(req, res) {
-
-    console.log("User Data:");
-    console.log(req.body);
-
-    db.user.create({
-      name: "Lisa",
-      gender: "female",
-      age: 24,
-      ageRangeHigh: 32,
-      ageRangeLow: 25,
-      phoneNumber: "123-456-7890",
-      sexualPref: "female",
-      language: "English", "French", "Spanish"
-      interests: "dance kayaks hiking scuba-diving hunting traveling literature foreign-languages safaris jeeps"
-    }).then(function(results) {
-      // `results` here would be the newly created user
-      res.send(results);
-    });
-
-  });
+  
 
 };
 
