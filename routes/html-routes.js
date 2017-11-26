@@ -16,32 +16,32 @@ module.exports = function(app) {
 
   // signup route loads signIn.html
   app.get("/signup", function(req, res) {
-    res.sendFile(path.join(__dirname, "./signUp.html"));
+    res.sendFile(path.join(__dirname, "/../public/signUp.html"));
   });
 
   // signin route loads signIn.html
   app.get("/signin", function(req, res) {
-    res.sendFile(path.join(__dirname, "./signIn.html"));
+    res.sendFile(path.join(__dirname, "/../public/signIn.html"));
   });
 
   // profile route loads tags.html
   app.get("/profile", function(req, res) {
-    res.sendFile(path.join(__dirname, "./tags.html")); 
+    res.sendFile(path.join(__dirname, "/../public/tags.html")); 
   });
 
   // breaktheice route loads breakTheIce.html
   app.get("/breaktheice", function(req, res) {
-    res.sendFile(path.join(__dirname, "./breakTheIce.html"));
+    res.sendFile(path.join(__dirname, "/../public/breakTheIce.html"));
   });
 
   // // meet route loads meet.html
-  app.get("/meet", function(req, res) {
-    res.sendFile(path.join(__dirname, "./meet.html"));
+  app.get("/matches", function(req, res) {
+    res.sendFile(path.join(__dirname, "/../public/matches.html"));
   });
 
   //default to main.html
   app.use(function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/main.html"));
+    res.sendFile(path.join(__dirname, "/../public/main.html"));
   });
 
 };

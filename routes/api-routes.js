@@ -1,7 +1,7 @@
 // *********************************************************************************
 // api-routes.js - this file offers a set of routes for displaying and saving data to the db
 // *********************************************************************************
-
+console.log("connected");
 // Dependencies
 // =============================================================
 var db = require("../models");
@@ -30,20 +30,20 @@ module.exports = function(app) {
     console.log("User Data:");
     console.log(req.body);
 
-    db.user.create({
-      name: "Elliott",
-      gender: "male",
-      age: 29,
-      ageRangeHigh: 35,
-      ageRangeLow: 21,
-      phoneNumber: "555-555-5555",
-      sexualPref: "female",
-      language: "English",
-      interests: "cars boats planes submarines guns freedom beef fire jeeps monkeys"
-    }).then(function(results) {
-      // `results` here would be the newly created user
-      res.send(results);
-    });
+    // db.user.create({
+    //   name: "Elliott",
+    //   gender: "male",
+    //   age: 29,
+    //   ageRangeHigh: 35,
+    //   ageRangeLow: 21,
+    //   phoneNumber: "555-555-5555",
+    //   sexualPref: "female",
+    //   language: "English",
+    //   interests: "cars boats planes submarines guns freedom beef fire jeeps monkeys"
+    // }).then(function(results) {
+    //   // `results` here would be the newly created user
+    //   res.send(results);
+    // });
 
   });
 

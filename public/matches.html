@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>iB Meet Someone</title>
+    <title>iB Matches</title>
     <link rel="icon" type="image/png" sizes="16x16" href="/public/images/favicon.ico">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent1">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="/matches"><span class="linkColor">Matches <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/breaktheice"><span class="linkColor">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/profile"><span class="linkColor">Edit Profile</a>
@@ -51,28 +51,12 @@
 
             <!--HERE ARE THE BEGINNING DIVS WHEN THE USER FIRST GETS TO THE PAGE-->
             <div class="readyToMeet">
-                <p>Ready to meet? Click the axe to break the ice!</p>
+                <p>Your matches</p>
             </div>
 
-            <div class="pickAxe">
-                <img src="/public/images/pickaxe.png" alt="pickAxe">
+            <div class="matches">
+                
             </div>
-
-            <!--WHEN THE USER CLICKS ON THE PICKAXE THE FOLLOWING DIVS DISPLAY-->
-            <div class="map">
-                <!-- WE CAN EITHER PUT AN EMPTY DIV HERE FOR THE MAP WHEN SEACHING STARTS OR EMPTY AND REPLACE THE CURRENT CONTENT WITH A MAP AND THE TWO USERS INFO  -->
-            </div>
-
-            <div class="userMatch">
-            <!--THIS IS WHERE THE USER DATA DISPLAYS-->
-            <p> You get to meet John!</p>
-            </div>
-
-
-            <div class="iceBreakers">
-                <!-- THIS IS WHERE THE MATCHING ICEBREAKERS DISPLAY-->
-            </div>
-
 
         </div>
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -84,20 +68,6 @@
             </div>
         </footer>
     </div>
-
-
-    <!--HERE IS THE JAVASCRIPT -->
-    <script type="text/javascript">
-    $(".userMatch").hide();
-
-    $(".pickAxe").click(function() {
-        $(".pickAxe").hide();
-        $(".readyToMeet").hide();
-        $(".map").show();
-        $(".userMatch").show();
-    });
-
-    </script>
 
 </body>
 
