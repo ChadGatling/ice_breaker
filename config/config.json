@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "MyNewPass",
+    "password": "Batman123",
     "database": "ice_breaker",
     "host": "127.0.0.1",
     "dialect": "mysql"
