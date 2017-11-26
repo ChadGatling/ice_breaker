@@ -42,7 +42,27 @@ module.exports = function(app) {
     
   });
 
-    // Add a user2
+  app.post("/api/new", function(req, res) {
+
+    console.log("User Data:");
+    console.log(req.body);
+
+    db.user.create({
+      name: "Lisa",
+      gender: "female",
+      age: 24,
+      ageRangeHigh: 32,
+      ageRangeLow: 25,
+      phoneNumber: "123-456-7890",
+      sexualPref: "female",
+      language: "English, French, Spanish",
+      interests: "dance kayaks hiking scuba-diving hunting traveling literature foreign-languages safaris jeeps"
+    }).then(function(results) {
+      // `results` here would be the newly created user
+      res.send(results);
+    });
+
+  });
 
 };
 
