@@ -64,6 +64,3 @@ typings/
 
 # dotenv environment variables file
 .env
-
-# express config file
-config/config.json
