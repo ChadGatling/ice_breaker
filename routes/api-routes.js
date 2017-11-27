@@ -30,20 +30,21 @@ module.exports = function(app) {
     console.log("User Data:");
     console.log(req.body);
 
-    // db.user.create({
-    //   name: "Elliott",
-    //   gender: "male",
-    //   age: 29,
-    //   ageRangeHigh: 35,
-    //   ageRangeLow: 21,
-    //   phoneNumber: "555-555-5555",
-    //   sexualPref: "female",
-    //   language: "English",
-    //   interests: "cars boats planes submarines guns freedom beef fire jeeps monkeys"
-    // }).then(function(results) {
-    //   // `results` here would be the newly created user
-    //   res.send(results);
-    // });
+    db.user.create({
+      firstName: req.body.firstName,
+      lastName: req.body.lastName,
+      gender: "male",
+      age: req.body.age,
+      ageRangeHigh: 35,
+      ageRangeLow: 21,
+      phoneNumber: req.body.phoneNumber,
+      sexualPref: "female",
+      language: "English",
+      interests: "cars boats planes submarines guns freedom beef fire jeeps monkeys"
+    }).then(function(results) {
+      // `results` here would be the newly created user
+      res.redirect("/profile");
+    });
 
   });
 
